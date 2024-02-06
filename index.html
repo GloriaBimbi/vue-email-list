@@ -43,7 +43,7 @@
         <button @click="generateEmails()" class="btn btn-primary">
           Generate 10 e-mail
         </button>
-        <ol v-show="emails.lenght === 10">
+        <ol v-show="emails.lenght == 10">
           <li v-for="email in emails">{{email}}</li>
         </ol>
       </main>
