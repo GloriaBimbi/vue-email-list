@@ -7,7 +7,7 @@ const app = createApp({
   },
 
   created() {
-    this.generateEmails();
+    // this.generateEmails();
   },
 
   methods: {
@@ -19,7 +19,6 @@ const app = createApp({
             console.log(response.data.response);
             const email = response.data.response;
             this.emails.push(email);
-            console.log(this.emails);
           });
       }
     },

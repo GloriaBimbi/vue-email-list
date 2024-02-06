@@ -40,9 +40,12 @@
     <div id="app">
       <main>
         <h1>Lista di indirizzi mail:</h1>
-        <ul>
+        <button @click="generateEmails()" class="btn btn-primary">
+          Generate 10 e-mail
+        </button>
+        <ol v-show="emails.lenght = 10">
           <li v-for="email in emails">{{email}}</li>
-        </ul>
+        </ol>
       </main>
     </div>
     <!-- <script
